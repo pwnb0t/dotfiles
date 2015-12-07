@@ -1,0 +1,32 @@
+" vimrc file for the VsVim Visual Studio plugin
+
+source C:\Users\estenmark\.vimrc
+
+nnoremap g: ^f(hyiw^viwp
+
+" Surrounds visual with #region Public Methods (cursor needs to be at the top)
+vnoremap g9 <esc>kko<esc>o# region Public Methods<esc>gvo<esc>o# endregion<cr><esc>gvo<esc>kk^ww
+
+
+""""""""""""""""""""""""
+" Code helpers
+""""""""""""""""""""""""
+
+inoremap <c-i><c-o> { get; set; }
+
+
+""""""""""""""""""""""""
+" Folding improvements
+""""""""""""""""""""""""
+
+" Fold like ^m^o, expand all #regions and leave cursor in the current region
+nnoremap z1 j?# region<cr>mzzMNNNNNNNNNN'z/ÿÿÿ<cr>zz
+" Fold like z1, but only expand method regions
+nnoremap z2 j?# region.*Methods<cr>mzzMNNNNNNNNNN'z/ÿÿÿ<cr>zz
+
+" Fold like z1, but also return cursor to last position
+nnoremap z8 mzzMgg/# region<cr>nnnnnnnnnn`z/ÿÿÿ<cr>zz
+" Fold like ^m^o^m^m, but return cursor to last position
+nnoremap z9 mzzM`zzz
+
+

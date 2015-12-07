@@ -244,7 +244,7 @@ nnoremap _ :call ReplaceAndDown()<cr>
 " Putting guard clause above line
 "nnoremap ,/ :let @/=""<cr>
 nnoremap g/ /ÿÿÿ<cr>
-#nnoremap gG O//<Space>guard<Space>clause<Space>-<Space>
+"nnoremap gG O//<Space>guard<Space>clause<Space>-<Space>
 
 " Change CamelCaseWord to UPPER_SNAKE_CASE_WORD
 nnoremap g3 :set noic<cr>mayiwo<esc>p:s/\u/_\0/g<cr>gUiwxyiwdd`aviw"0pb:set ic<cr>/ÿÿÿ<cr>
@@ -256,6 +256,6 @@ if has('win32') || has('win64')
     "set runtimepath=path/to/home.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,path/to/home.vim/after
 endif
 
-#nmap <F5> :w<CR>:!ruby %<CR>
-#imap <F5> <Esc>:w<CR>:!ruby %<CR>
+"nmap <F5> :w<CR>:!ruby %<CR>
+"imap <F5> <Esc>:w<CR>:!ruby %<CR>
 

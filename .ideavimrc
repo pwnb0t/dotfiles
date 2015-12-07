@@ -1,4 +1,3 @@
 source ~/.vimrc
 
 nnoremap _ viw"0pbj
-nnoremap g9 :%s/\/\/ setup/\/\/ Setup/gi<CR>:%s/\/\/ pre.*conditions/\/\/ Preconditions/gi<CR>:%s/\/\/ execute/\/\/ Execute/gi<CR>:%s/\/\/ post.*conditions/\/\/ Postconditions/gi<CR>

@@ -12,8 +12,6 @@ set message_cachedir =~/.mutt/cache/bodies
 set certificate_file =~/.mutt/certificates
 
 set smtp_url = "smtp://evan.stenmark@formstack.com@smtp.gmail.com:587/"
-#set smtp_url = "smtps://evan.stenmark@formstack.com@smtp.gmail.com:465/"
-#set smtp_url        = "smtps://USERNAME@DOMAIN.EDU@smtp.gmail.‚Äã‚Äã‚Äãcom:465/"
 set smtp_pass = "APP SPECIFIC PASSWORD"
 
 set move = no 
